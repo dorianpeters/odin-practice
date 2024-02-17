@@ -13,8 +13,21 @@
   <body>
     <script>
       // Task from: https://www.theodinproject.com/lessons/foundations-object-basics
+      const arr = [1, 2, 3, 4, 5];
+      const sum = sumOfTripledEvens(arr);
+      console.log(sum);
 
-      
+      function sumOfTripledEvens(array) {
+        const filtered1 = array.filter((num) => num % 2);
+        const filtered2 = filtered1.map((num) => num * 3);
+        const filtered3 = filtered2.reduce((total, num) => total += num, 0);
+
+        console.log(filtered1);
+        console.log(filtered2);
+        console.log(filtered3);
+        return filtered3;
+      }
+
     </script>
   </body>
 </html>
