@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Objects Practice</title>
+    <style>
+      body {
+        background-color: darkgray;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // Tasks from: https://javascript.info/object
+      // Hello Object
+      let user = {};
+      user.name = 'John';
+      user.surname = 'Smith';
+      user.name = 'Pete';
+      delete user.name;
+      console.log(user);
+
+      // Check for emptiness
+      let schedule = {};
+      console.log(isEmpty(schedule));
+
+      function isEmpty (object) {
+        for (prop in object) {
+          return false;
+        }
+        return true;
+      }
+
+      // Sum object properties
+      let salaries = {
+        John: 100,
+        Ann: 160,
+        Pete: 130
+      };
+      let sum = 0;
+      for (salary in salaries) {
+        sum += salaries[salary];
+      }
+      console.log(sum);
+
+      // Multiply numeric values by 2
+      let menu = {
+        width: 200,
+        height: 300,
+        title: "My menu",
+      };
+
+      function multiplyNumeric(object) {
+        for (const key in object) {
+          if (!isNaN(object[key])) {
+            object[key] *= 2; 
+          }
+        }
+      }
+
+      multiplyNumeric(menu);
+      console.log(menu);
+    </script>
+  </body>
+</html>
