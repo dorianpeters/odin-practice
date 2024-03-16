@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Basic Controls</title>
+  </head>
+  <body>
+    <h1>Basic Controls 1</h1>
+    <form>
+      <ul>
+        <li>
+          <label for="name">User ID:</label>
+          <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+          <label for="pwd">Email:</label>
+          <input type="password" id="pwd" name="user_pwd" />
+        </li>
+        <li>
+          <input type="button" value="Log in"/>
+        </li>
+      </ul>
+    </form>
+    <h1>Basic Controls 2</h1>
+      <form>
+        <fieldset>
+          <legend>Who is your favorite pony?</legend>
+          <ul>
+            <li>
+              <label for="pinkie">Pinkie Pie</label>
+              <input type="radio" id="pie" name="pony" value="pie" checked />
+
+            </li>
+            <li>
+              <label for="rainbow">Rainbow Dash</label>
+              <input type="radio" id="dash" name="pony" value="dash"/>
+
+            </li>
+            <li>
+              <label for="twilight">Twilight Sparkle</label>
+              <input type="radio" id="sparkle" name="pony" value="sparkle"/>
+
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Hot Dog preferences</legend>
+          <ul>
+            <li>
+              <label for="vegan">Vegan</label>
+              <input type="checkbox" id="vegan" name="hotdog" value="vegan"/>
+            </li>
+            <li>
+              <label for="onions">Onions</label>
+              <input type="checkbox" id="onions" name="hotdog" value="onions"/>
+            </li>
+            <li>
+              <label for="relish">Relish</label>
+              <input type="checkbox" id="relish" name="hotdog" value="relish"/>
+            </li>
+            <li>
+              <label for="mustand">Mustard</label>
+              <input type="checkbox" id="mustand" name="hotdog" value="mustard`"/>
+            </li>
+          </ul>
+        </fieldset>
+        <button>Submit</button>
+      </form>
+      <h1>Basic Controls 3</h1>
+      <form>
+        <ul>
+          <li>
+            <label for="gallery-img">Choose gallery images to upload</label>
+            <input type="file" name="file" id="file" accept="image/png, image/jpeg" multiple/>
+          </li>
+        </ul>
+        <button>Submit</button>
+      </form>
+  </body>
+</html>
